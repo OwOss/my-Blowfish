@@ -1,8 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://OwOss.github.io/my-Blowfish/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My Blog'
 theme = "blowfish"
 sectionPagesMenu = "main"
+
 
 
 # 导航栏链接
