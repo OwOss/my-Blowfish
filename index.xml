@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>https://OwOss.github.io/my-Blowfish/</link><description>Recent content on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2025</copyright><lastBuildDate>Wed, 12 Mar 2025 15:46:25 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/index.xml" rel="self" type="application/rss+xml"/><item><title>First Post</title><link>https://OwOss.github.io/my-Blowfish/post/first-post/</link><pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid><description>&lt;p>这是我的 Hugo 测试用例~！&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>https://OwOss.github.io/my-Blowfish/</link><description>Recent content on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2025</copyright><lastBuildDate>Wed, 12 Mar 2025 15:46:25 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/index.xml" rel="self" type="application/rss+xml"/><item><title>First Post</title><link>https://OwOss.github.io/my-Blowfish/post/first-post/</link><pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid><description>&lt;p>这是我的 Hugo 测试用例~！
+&lt;/p>
+&lt;p>内联公式测试用例 \(f(x)=mx+b\)&lt;/p>
+&lt;p>公式块测试用例&lt;/p>
+&lt;p>$$
+L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R
+$$&lt;/p>
+&lt;p>代码测试 &lt;code>import&lt;/code>&lt;/p>
+&lt;p>代码块测试用例&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> pandas &lt;span style="color:#66d9ef">as&lt;/span> pd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#39;hello&amp;#39;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>All looks fine!&lt;/p></description></item></channel></rss>
