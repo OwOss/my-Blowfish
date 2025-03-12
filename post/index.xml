@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>https://example.org/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on My Blog</title>
+    <link>https://OwOss.github.io/my-Blowfish/post/</link>
+    <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Wed, 12 Mar 2025 15:46:25 +0800</lastBuildDate><atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Mar 2025 15:46:25 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>First Post</title>
-      <link>https://example.org/post/first-post/</link>
+      <link>https://OwOss.github.io/my-Blowfish/post/first-post/</link>
       <pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate>
       
-      <guid>https://example.org/post/first-post/</guid>
+      <guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid>
       <description>&lt;p&gt;这是我的 Hugo 测试用例~！&lt;/p&gt;</description>
       
     </item>
