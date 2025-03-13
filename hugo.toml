@@ -4,7 +4,8 @@ title = 'My Blog'
 theme = "blowfish"
 sectionPagesMenu = "main"
 
-
+[params]
+  math = true
 
 # 导航栏链接
 [[menu.main]]

@@ -2,6 +2,7 @@
 date = "2025-03-12T15:46:25+08:00"
 draft = false
 title = "First Post"
+math = true
 +++
 
 这是我的 Hugo 测试用例~！
@@ -24,4 +25,11 @@ import pandas as pd
 
 print('hello')
 ```
-All looks fine!
+% KaTeX block notation
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$
+
+% KaTeX inline notation
+Inline notation: \\(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\\)
+
