@@ -1,18 +1,151 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OwOss</title><link>https://OwOss.github.io/my-Blowfish/</link><description>Recent content on OwOss</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© Wade Wang</copyright><lastBuildDate>Wed, 12 Mar 2025 15:46:25 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/index.xml" rel="self" type="application/rss+xml"/><item><title>First Post</title><link>https://OwOss.github.io/my-Blowfish/post/first-post/</link><pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid><description>&lt;p>这是我的 Hugo 测试用例~！
-&lt;/p>
-&lt;p>内联公式测试用例 \(f(x)=mx+b\)&lt;/p>
-&lt;p>公式块测试用例&lt;/p>
-&lt;p>$$
-L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R
-$$&lt;/p>
-&lt;p>代码测试 &lt;code>import&lt;/code>&lt;/p>
-&lt;p>代码块测试用例&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> pandas &lt;span style="color:#66d9ef">as&lt;/span> pd
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#39;hello&amp;#39;&lt;/span>)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>% KaTeX block notation
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blowfish</title>
+    <link>http://localhost:1313/my-Blowfish/</link>
+    <description>Recent content on Blowfish</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© Wade Wang</copyright>
+    <lastBuildDate>Fri, 14 Mar 2025 15:46:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/my-Blowfish/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>线性代数中的直线</title>
+      <link>http://localhost:1313/my-Blowfish/post/parametric-representations-of-lines/</link>
+      <pubDate>Fri, 14 Mar 2025 15:46:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/my-Blowfish/post/parametric-representations-of-lines/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;直线的参数方程 
+    &lt;div id=&#34;%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Parametric representations of lines&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;给定向量\(\vec{a} 和 \vec{b}\)，可以定义一个直线集合 \(L\) 如下：
+$$
+L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}
+$$
+这个表达式表示的是通过向量 \(\vec{a}\) 且沿着方向 \(\vec{a} - \vec{b}\) 延伸的直线。具体来说，直线上的每个点都可以通过调整 \(t\) 的值来得到。&lt;/p&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;关键点归纳 
+    &lt;div id=&#34;%E5%85%B3%E9%94%AE%E7%82%B9%E5%BD%92%E7%BA%B3&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%85%B3%E9%94%AE%E7%82%B9%E5%BD%92%E7%BA%B3&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;起点是\(\vec{a}\)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方向是\(\vec{a}-\vec{b}\)&lt;/strong&gt;
+直线的方向是由向量\(\vec{a}-\vec{b}\)决定的。可以理解为从点 \(b\) 到点 \(a\) 的方向。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参数\(t\)控制位置&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;当\(t = 0\)时，直线上的点就是向量 \(\vec{a}\)。&lt;/li&gt;
+&lt;li&gt;当\(t &amp;gt; 0\)时，沿着\(\vec{a}-\vec{b}\)的方向移动。&lt;/li&gt;
+&lt;li&gt;当\(t &amp;lt; 0\)时，沿着\(\vec{a}-\vec{b}\)的反方向移动，也就是\(\vec{b}-\vec{a}\)方向移动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;包含直线上的所有点（共线）&lt;/strong&gt;
+通过不同的 \(t\) 值，你可以得到直线上的所有点。这个集合 \(L\) 实际上就是所有通过点 \(\vec{a}\)，沿着方向 \(\vec{a} - \vec{b}\) 延伸的点的集合。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;线性扩展&lt;/strong&gt;
+这个集合实际上是通过对向量 $\mathbf{a} - \mathbf{b}$ 进行线性组合来表示的：$\mathbf{a} + t(\mathbf{a} - \mathbf{b})$。$t$ 可以是任意实数，代表着在该方向上的任意步长。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;直线的图形解释 
+    &lt;div id=&#34;%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%A7%A3%E9%87%8A&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%A7%A3%E9%87%8A&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;几何理解&lt;/strong&gt;：
+直线由 \(\vec{a}\) 点出发，沿着方向 \(\vec{a} - \vec{b}\) 延伸。不同的 \(t\) 值代表了直线上的不同位置。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;图示&lt;/strong&gt;：
+你可以在图中画出 \(\vec{a}\) 和 \(\vec{b}\) 两点，并标出方向 \(\vec{a} - \vec{b}\)，然后从 \(\vec{a}\) 开始，沿着该方向画直线，展示 \(t\) 变化时直线的不同位置。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;更详细的解释： 
+    &lt;div id=&#34;%E6%9B%B4%E8%AF%A6%E7%BB%86%E7%9A%84%E8%A7%A3%E9%87%8A&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E6%9B%B4%E8%AF%A6%E7%BB%86%E7%9A%84%E8%A7%A3%E9%87%8A&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;参数方程&lt;/strong&gt;：
+直线的参数方程通过一个参数（在这个例子中是 \(t\)）来描述直线上的所有点。对于直线上的每个点，参数 \(t\) 取不同的值，生成直线的所有点。这个方法非常灵活，可以描述二维、三维或更高维空间中的直线。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参数化&lt;/strong&gt;：
+参数化直线的主要目的是通过一个单独的参数来控制直线上的位置，从而避免通过其他形式（比如一般式或点斜式）来表示。你可以看到，这种表示方法可以很方便地通过 \(t\) 来控制直线的起点和方向。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3 class=&#34;relative group&#34;&gt;为什么要有参数方程： 
+    &lt;div id=&#34;%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h3&gt;
+&lt;p&gt;因为\(L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}\)具有很好的通用性。即便在\(\mathbb{R}^n\)维度的空间下也可以描述，因为\(\vec{a}\)和\(\vec{b}\)可以扩充成任意维度。
+例如：
+$$
+\vec{a}\begin{bmatrix} 2\newline 1\newline 3\end{bmatrix} -\ \vec{b}\begin{bmatrix} 1\newline 2\newline 3\end{bmatrix}
+$$
+这样就是一个三维空间下的直线方向了（\(\mathbb{R}^3\)）&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/my-Blowfish/post/first-post/</link>
+      <pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/my-Blowfish/post/first-post/</guid>
+      <description>&lt;p&gt;这是我的 Hugo 测试用例~！
+
+&lt;/p&gt;
+&lt;p&gt;内联公式测试用例 \(f(x)=mx+b\)&lt;/p&gt;
+&lt;p&gt;公式块测试用例&lt;/p&gt;
+&lt;p&gt;$$
+L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R\newline a-b
+$$&lt;/p&gt;
+&lt;p&gt;代码测试 &lt;code&gt;import&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;代码块测试用例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;% KaTeX block notation
 $$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p>
-&lt;p>% KaTeX inline notation
-Inline notation: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)&lt;/p></description></item></channel></rss>
+$$&lt;/p&gt;
+&lt;p&gt;% KaTeX inline notation
+Inline notation: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

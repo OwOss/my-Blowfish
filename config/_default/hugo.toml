@@ -2,26 +2,16 @@ baseURL = 'https://OwOss.github.io/my-Blowfish/'
 languageCode = 'en-us'
 title = 'OwOss'
 theme = "blowfish"
-sectionPagesMenu = "main"
+#sectionPagesMenu = "main"
 
 [params]
 math = true
 copyright = "© Wade Wang"
 
 [params.author]
-#name = "Wade"
+name = "OwOss"
 image = "img/blowfish_logo_transparent.png"
 headline = "A Mortal"
-bio = "A little bit about me"
+bio = "一行代码写一天，逻辑理顺笑开颜！"
 #links = [{ twitter = "https://twitter.com/username" }]
 
-# 导航栏链接
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 2

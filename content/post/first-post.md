@@ -1,8 +1,10 @@
 +++
 date = "2025-03-12T15:46:25+08:00"
-draft = false
 title = "First Post"
-math = true
+categories = ['Test']
+categories_weight = 99
+tags = ['Code', 'Math', 'Python']
+tags_weight = 22
 +++
 
 这是我的 Hugo 测试用例~！
@@ -13,7 +15,7 @@ math = true
 公式块测试用例
 
 $$
-L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R
+L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R\newline a-b
 $$
 
 代码测试 `import`
