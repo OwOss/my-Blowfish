@@ -1,6 +1,6 @@
 +++
 date = '2025-03-14T15:46:50+08:00'
-draft = true
+draft = 
 title = '线性代数中的直线'
 tags = ['Math']
 tags_weight = 20
