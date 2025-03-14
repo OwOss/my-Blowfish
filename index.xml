@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blowfish</title><link>https://OwOss.github.io/my-Blowfish/</link><description>Recent content on Blowfish</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Wade Wang</copyright><lastBuildDate>Fri, 14 Mar 2025 15:46:50 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/index.xml" rel="self" type="application/rss+xml"/><item><title>First Post</title><link>https://OwOss.github.io/my-Blowfish/post/first-post/</link><pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid><description>&lt;p>这是我的 Hugo 测试用例~！
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blowfish</title><link>https://OwOss.github.io/my-Blowfish/</link><description>Recent content on Blowfish</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Wade Wang</copyright><lastBuildDate>Fri, 14 Mar 2025 15:46:50 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/index.xml" rel="self" type="application/rss+xml"/><item><title>线性代数中的直线</title><link>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</link><pubDate>Fri, 14 Mar 2025 15:46:50 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</guid><description>&lt;h1 class="relative group">直线的参数方程
+&lt;div id="%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;blockquote>
+&lt;p>Parametric representations of lines&lt;/p>&lt;/blockquote>
+&lt;p>给定向量\(\vec{a} 和 \vec{b}\)，可以定义一个直线集合 \(L\) 如下：
+$$
+L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}
+$$
+这个表达式表示的是通过向量 \(\vec{a}\) 且沿着方向 \(\vec{a} - \vec{b}\) 延伸的直线。具体来说，直线上的每个点都可以通过调整 \(t\) 的值来得到。&lt;/p>
+&lt;h3 class="relative group">关键点归纳
+&lt;div id="%E5%85%B3%E9%94%AE%E7%82%B9%E5%BD%92%E7%BA%B3" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E5%85%B3%E9%94%AE%E7%82%B9%E5%BD%92%E7%BA%B3" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>起点是\(\vec{a}\)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>方向是\(\vec{a}-\vec{b}\)&lt;/strong>
+直线的方向是由向量\(\vec{a}-\vec{b}\)决定的。可以理解为从点 \(b\) 到点 \(a\) 的方向。&lt;/li>
+&lt;li>&lt;strong>参数\(t\)控制位置&lt;/strong>
+&lt;ul>
+&lt;li>当\(t = 0\)时，直线上的点就是向量 \(\vec{a}\)。&lt;/li>
+&lt;li>当\(t &amp;gt; 0\)时，沿着\(\vec{a}-\vec{b}\)的方向移动。&lt;/li>
+&lt;li>当\(t &amp;lt; 0\)时，沿着\(\vec{a}-\vec{b}\)的反方向移动，也就是\(\vec{b}-\vec{a}\)方向移动。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>包含直线上的所有点（共线）&lt;/strong>
+通过不同的 \(t\) 值，你可以得到直线上的所有点。这个集合 \(L\) 实际上就是所有通过点 \(\vec{a}\)，沿着方向 \(\vec{a} - \vec{b}\) 延伸的点的集合。&lt;/li>
+&lt;li>&lt;strong>线性扩展&lt;/strong>
+这个集合实际上是通过对向量 $\mathbf{a} - \mathbf{b}$ 进行线性组合来表示的：$\mathbf{a} + t(\mathbf{a} - \mathbf{b})$。$t$ 可以是任意实数，代表着在该方向上的任意步长。&lt;/li>
+&lt;/ol>
+&lt;h3 class="relative group">直线的图形解释
+&lt;div id="%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%A7%A3%E9%87%8A" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%9B%BE%E5%BD%A2%E8%A7%A3%E9%87%8A" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>几何理解&lt;/strong>：
+直线由 \(\vec{a}\) 点出发，沿着方向 \(\vec{a} - \vec{b}\) 延伸。不同的 \(t\) 值代表了直线上的不同位置。&lt;/li>
+&lt;li>&lt;strong>图示&lt;/strong>：
+你可以在图中画出 \(\vec{a}\) 和 \(\vec{b}\) 两点，并标出方向 \(\vec{a} - \vec{b}\)，然后从 \(\vec{a}\) 开始，沿着该方向画直线，展示 \(t\) 变化时直线的不同位置。&lt;/li>
+&lt;/ul>
+&lt;h3 class="relative group">更详细的解释：
+&lt;div id="%E6%9B%B4%E8%AF%A6%E7%BB%86%E7%9A%84%E8%A7%A3%E9%87%8A" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E6%9B%B4%E8%AF%A6%E7%BB%86%E7%9A%84%E8%A7%A3%E9%87%8A" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>参数方程&lt;/strong>：
+直线的参数方程通过一个参数（在这个例子中是 \(t\)）来描述直线上的所有点。对于直线上的每个点，参数 \(t\) 取不同的值，生成直线的所有点。这个方法非常灵活，可以描述二维、三维或更高维空间中的直线。&lt;/li>
+&lt;li>&lt;strong>参数化&lt;/strong>：
+参数化直线的主要目的是通过一个单独的参数来控制直线上的位置，从而避免通过其他形式（比如一般式或点斜式）来表示。你可以看到，这种表示方法可以很方便地通过 \(t\) 来控制直线的起点和方向。&lt;/li>
+&lt;/ul>
+&lt;h3 class="relative group">为什么要有参数方程：
+&lt;div id="%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h3>
+&lt;p>因为\(L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}\)具有很好的通用性。即便在\(\mathbb{R}^n\)维度的空间下也可以描述，因为\(\vec{a}\)和\(\vec{b}\)可以扩充成任意维度。
+例如：
+$$
+\vec{a}\begin{bmatrix} 2\newline 1\newline 3\end{bmatrix} -\ \vec{b}\begin{bmatrix} 1\newline 2\newline 3\end{bmatrix}
+$$
+这样就是一个三维空间下的直线方向了（\(\mathbb{R}^3\)）&lt;/p></description></item><item><title>First Post</title><link>https://OwOss.github.io/my-Blowfish/post/first-post/</link><pubDate>Wed, 12 Mar 2025 15:46:25 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/first-post/</guid><description>&lt;p>这是我的 Hugo 测试用例~！
 &lt;/p>
 &lt;p>内联公式测试用例 \(f(x)=mx+b\)&lt;/p>
 &lt;p>公式块测试用例&lt;/p>
