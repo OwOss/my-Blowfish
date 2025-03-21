@@ -32,7 +32,7 @@ style="text-decoration-line: none !important;" href="#%E5%85%B3%E9%94%AE%E7%82%B
 &lt;li>当\(t &amp;lt; 0\)时，沿着\(\vec{a}-\vec{b}\)的反方向移动，也就是\(\vec{b}-\vec{a}\)方向移动。&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>包含直线上的所有点（共线）&lt;/strong>
+&lt;li>&lt;strong>包含直线上的所有点&lt;/strong>
 通过不同的 \(t\) 值，你可以得到直线上的所有点。这个集合 \(L\) 实际上就是所有通过点 \(\vec{a}\)，沿着方向 \(\vec{a} - \vec{b}\) 延伸的点的集合。&lt;/li>
 &lt;li>&lt;strong>线性扩展&lt;/strong>
 这个集合实际上是通过对向量 $\mathbf{a} - \mathbf{b}$ 进行线性组合来表示的：$\mathbf{a} + t(\mathbf{a} - \mathbf{b})$。$t$ 可以是任意实数，代表着在该方向上的任意步长。&lt;/li>
