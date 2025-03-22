@@ -7,7 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© Wade Wang</copyright>
-    <lastBuildDate>Fri, 14 Mar 2025 15:46:50 +0800</lastBuildDate><atom:link href="http://localhost:1313/my-Blowfish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Mar 2025 16:02:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/my-Blowfish/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Adding vectors</title>
+      <link>http://localhost:1313/my-Blowfish/post/adding_vectors/</link>
+      <pubDate>Fri, 21 Mar 2025 16:02:15 +0800</pubDate>
+      
+      <guid>http://localhost:1313/my-Blowfish/post/adding_vectors/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;向量的加减，直线参数方程的推导 
+    &lt;div id=&#34;%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E5%87%8F%E7%9B%B4%E7%BA%BF%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E7%9A%84%E6%8E%A8%E5%AF%BC&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100&#34;&gt;
+        &lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34;
+            style=&#34;text-decoration-line: none !important;&#34; href=&#34;#%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E5%87%8F%E7%9B%B4%E7%BA%BF%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E7%9A%84%E6%8E%A8%E5%AF%BC&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;        
+    
+&lt;/h1&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Adding vectors&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;$\vec{a}=\begin{bmatrix} 2\newline2\end{bmatrix}$ 和 $\vec{b}=\begin{bmatrix} 3\newline-3\end{bmatrix}$&lt;/p&gt;
+&lt;p&gt;把两个向量加到一起我们会得到：&lt;/p&gt;
+&lt;p&gt;$$
+\vec{a}+\vec{b}=\begin{bmatrix}2+3\newline2-3 \end{bmatrix}=\begin{bmatrix}5\newline-1 \end{bmatrix}
+$$
+
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/my-Blowfish/ill/addab.png&#34; alt=&#34;a&amp;#43;b&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;你会发现实际上就是把 \(vec{b}\) 平移到 \(vec{a}\) 的终点。你可以这么理解，向量的 \(vec{a}+vec{b}\) 其实就是先从 0 点走到 \(a\) 点，然后在走到与 \(\vec{b}\) 相等的量到达 \(\vec{a}+\vec{b}\) 点。&lt;/p&gt;
+&lt;p&gt;减法会怎样？
+$$
+\vec{b}-\vec{a}=\begin{bmatrix}3-2\newline-3-2 \end{bmatrix}=\begin{bmatrix}1\newline-5 \end{bmatrix}
+$$&lt;/p&gt;
+&lt;p&gt;
+    &lt;figure&gt;
+      &lt;img class=&#34;my-0 rounded-md&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/my-Blowfish/ill/b-a.png&#34; alt=&#34;b-a&#34; /&gt;
+      
+    &lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;可以看出把 \(\vec{b}-\vec{a}\) 平移到 \(\vec{a}\) 的终点，就是从 \(a\) 点出发到 \(b\) 点，也就说，\(\vec{b}-\vec{a}\) 可以理解成从 \(a\) 点 出发到 \(b\) 点的距离。&lt;/p&gt;
+&lt;p&gt;到这里如果我们给 \(\vec{b}-\vec{a}\) 乘以一个标量(Scalar)，你会发现这就是一个经过起点 \(a\) 经过 \(b\) 点的一条直线，而参数方程 \(L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}\) 就是一个关于a 和 b的直线集合，标量的大小可以随意缩放这条直线。&lt;/p&gt;</description>
+      
+    </item>
     
     <item>
       <title>线性代数中的直线</title>
@@ -57,7 +104,7 @@ $$
 &lt;li&gt;当\(t &amp;lt; 0\)时，沿着\(\vec{a}-\vec{b}\)的反方向移动，也就是\(\vec{b}-\vec{a}\)方向移动。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;包含直线上的所有点（共线）&lt;/strong&gt;
+&lt;li&gt;&lt;strong&gt;包含直线上的所有点&lt;/strong&gt;
 通过不同的 \(t\) 值，你可以得到直线上的所有点。这个集合 \(L\) 实际上就是所有通过点 \(\vec{a}\)，沿着方向 \(\vec{a} - \vec{b}\) 延伸的点的集合。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;线性扩展&lt;/strong&gt;
 这个集合实际上是通过对向量 $\mathbf{a} - \mathbf{b}$ 进行线性组合来表示的：$\mathbf{a} + t(\mathbf{a} - \mathbf{b})$。$t$ 可以是任意实数，代表着在该方向上的任意步长。&lt;/li&gt;

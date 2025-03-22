@@ -21,7 +21,7 @@
 &lt;p&gt;内联公式测试用例 \(f(x)=mx+b\)&lt;/p&gt;
 &lt;p&gt;公式块测试用例&lt;/p&gt;
 &lt;p&gt;$$
-L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R
+L=\vec{a}+t(\vec{b}-\vec{a})|t\in\R\newline a-b
 $$&lt;/p&gt;
 &lt;p&gt;代码测试 &lt;code&gt;import&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;代码块测试用例&lt;/p&gt;
