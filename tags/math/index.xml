@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Blowfish</title><link>https://OwOss.github.io/my-Blowfish/tags/math/</link><description>Recent content in Math on Blowfish</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Wade Wang</copyright><lastBuildDate>Fri, 14 Mar 2025 15:46:50 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>线性代数中的直线</title><link>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</link><pubDate>Fri, 14 Mar 2025 15:46:50 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</guid><description>&lt;h1 class="relative group">直线的参数方程
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Blowfish</title><link>https://OwOss.github.io/my-Blowfish/tags/math/</link><description>Recent content in Math on Blowfish</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Wade Wang</copyright><lastBuildDate>Fri, 21 Mar 2025 16:02:15 +0800</lastBuildDate><atom:link href="https://OwOss.github.io/my-Blowfish/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding vectors</title><link>https://OwOss.github.io/my-Blowfish/post/adding_vectors/</link><pubDate>Fri, 21 Mar 2025 16:02:15 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/adding_vectors/</guid><description>&lt;h1 class="relative group">向量的加减，直线参数方程的推导
+&lt;div id="%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E5%87%8F%E7%9B%B4%E7%BA%BF%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E7%9A%84%E6%8E%A8%E5%AF%BC" class="anchor">&lt;/div>
+&lt;span
+class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+style="text-decoration-line: none !important;" href="#%E5%90%91%E9%87%8F%E7%9A%84%E5%8A%A0%E5%87%8F%E7%9B%B4%E7%BA%BF%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B%E7%9A%84%E6%8E%A8%E5%AF%BC" aria-label="Anchor">#&lt;/a>
+&lt;/span>
+&lt;/h1>
+&lt;blockquote>
+&lt;p>Adding vectors&lt;/p>&lt;/blockquote>
+&lt;p>$\vec{a}=\begin{bmatrix} 2\newline2\end{bmatrix}$ 和 $\vec{b}=\begin{bmatrix} 3\newline-3\end{bmatrix}$&lt;/p>
+&lt;p>把两个向量加到一起我们会得到：&lt;/p>
+&lt;p>$$
+\vec{a}+\vec{b}=\begin{bmatrix}2+3\newline2-3 \end{bmatrix}=\begin{bmatrix}5\newline-1 \end{bmatrix}
+$$
+&lt;figure>
+&lt;img class="my-0 rounded-md" loading="lazy" src="https://OwOss.github.io/my-Blowfish/ill/addab.png" alt="a&amp;#43;b" />
+&lt;/figure>
+&lt;/p>
+&lt;p>你会发现实际上就是把 \(vec{b}\) 平移到 \(vec{a}\) 的终点。你可以这么理解，向量的 \(vec{a}+vec{b}\) 其实就是先从 0 点走到 \(a\) 点，然后在走到与 \(\vec{b}\) 相等的量到达 \(\vec{a}+\vec{b}\) 点。&lt;/p>
+&lt;p>减法会怎样？
+$$
+\vec{b}-\vec{a}=\begin{bmatrix}3-2\newline-3-2 \end{bmatrix}=\begin{bmatrix}1\newline-5 \end{bmatrix}
+$$&lt;/p>
+&lt;p>
+&lt;figure>
+&lt;img class="my-0 rounded-md" loading="lazy" src="https://OwOss.github.io/my-Blowfish/ill/b-a.png" alt="b-a" />
+&lt;/figure>
+&lt;/p>
+&lt;p>可以看出把 \(\vec{b}-\vec{a}\) 平移到 \(\vec{a}\) 的终点，就是从 \(a\) 点出发到 \(b\) 点，也就说，\(\vec{b}-\vec{a}\) 可以理解成从 \(a\) 点 出发到 \(b\) 点的距离。&lt;/p>
+&lt;p>到这里如果我们给 \(\vec{b}-\vec{a}\) 乘以一个标量(Scalar)，你会发现这就是一个经过起点 \(a\) 经过 \(b\) 点的一条直线，而参数方程 \(L={\vec{a}+t(\vec{a}-\vec{b}|t\in\mathbb{R})}\) 就是一个关于a 和 b的直线集合，标量的大小可以随意缩放这条直线。&lt;/p></description></item><item><title>线性代数中的直线</title><link>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</link><pubDate>Fri, 14 Mar 2025 15:46:50 +0800</pubDate><guid>https://OwOss.github.io/my-Blowfish/post/parametric-representations-of-lines/</guid><description>&lt;h1 class="relative group">直线的参数方程
 &lt;div id="%E7%9B%B4%E7%BA%BF%E7%9A%84%E5%8F%82%E6%95%B0%E6%96%B9%E7%A8%8B" class="anchor">&lt;/div>
 &lt;span
 class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
